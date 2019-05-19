@@ -21,9 +21,6 @@ RUN apt-get install apache2 apache2-utils -y
 
 #install mysql
 RUN apt-get install mariadb-server mariadb-client mariadb-common -y
-RUN chown -R mysql /var/lib/mysql
-RUN chgrp -R mysql /var/lib/mysql
-RUN mysql_install_db --user=mysql --ldata=/var/lib/mysql
 
 #install pghp 7.3
 RUN apt-get update
@@ -69,6 +66,8 @@ RUN chown -R www-data:www-data /var/www/html
 #grant access to databse from any host
 RUN echo "[mysqld]" >> /etc/mysql/my.cnf
 RUN echo "bind-address=0.0.0.0" >> /etc/mysql/my.cnf
+RUN chown -R mysql:mysql /var/lib/mysql
+RUN mysql_install_db --user=mysql --ldata=/var/lib/mysql
 
 #expose ports 80 & 443 for apache and 3360 for mysql
 EXPOSE 80
