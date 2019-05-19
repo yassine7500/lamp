@@ -67,7 +67,7 @@ RUN chown -R www-data:www-data /var/www/html
 RUN echo "[mysqld]" >> /etc/mysql/my.cnf
 RUN echo "bind-address=0.0.0.0" >> /etc/mysql/my.cnf
 RUN chown -R mysql:mysql /var/lib/mysql
-RUN mysql_install_db --user=mysql --ldata=/var/lib/mysql
+#RUN mysql_install_db --user=mysql --ldata=/var/lib/mysql
 
 #expose ports 80 & 443 for apache and 3360 for mysql
 EXPOSE 80
