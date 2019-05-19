@@ -34,7 +34,7 @@ if [ ! -d "$DIR/config" ];then
     mkdir "$DIR/config/apache2/sites-enabled"
 fi
 
-docker run -p 80:$APACHE_HTTP_PORT -p443:$APACHE_HTTPS_PORT \
+docker run -p 80:$APACHE_HTTP_PORT -p443:$APACHE_HTTPS_PORT -p 3306:$MYSQL_PORT \
 -v $APP_DIR:/var/www/html \
 -v $APACHE_SITES_ENABLED:/etc/apache2/sites-enabled \
 -v $APACHE_CONF_ENABLED:/etc/apache2/conf-enabled \

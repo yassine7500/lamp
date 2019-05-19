@@ -14,11 +14,11 @@ yassine/lamp
 EOB
 
 #start mariadb
-service mysql start
+service mysql start &
 
 #create user pass to grant access from any host
-mysql -e "CREATE USER 'root'@'%'";
-mysql -e "GRANT ALL PRIVILEGES ON *.* TO 'root'@'%'";
+mysql -e "CREATE USER IF NOT EXIST 'root'@'%';"&
+mysql -e "GRANT ALL PRIVILEGES ON *.* TO 'root'@'%';"&
 
 #start apache
 if [ $APACHE_LOG_LEVEL == 'debug' ]; then

@@ -1,4 +1,6 @@
 FROM ubuntu:18.04
+MAINTAINER Yassine El Garras <yassine7500@gmail.com>
+LABEL Description="LAMP stack based on Ubuntu 18.04. Includes PHP 7.3"
 
 # update and upgrade the system
 RUN apt-get update
@@ -19,6 +21,9 @@ RUN apt-get install apache2 apache2-utils -y
 
 #install mysql
 RUN apt-get install mariadb-server mariadb-client mariadb-common -y
+RUN chown -R mysql /var/lib/mysql
+RUN chgrp -R mysql /var/lib/mysql
+RUN mysql_install_db --user=mysql --ldata=/var/lib/mysql
 
 #install pghp 7.3
 RUN apt-get update
