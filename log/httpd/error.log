@@ -1,0 +1,23 @@
+[Sun May 19 00:41:07.148409 2019] [so:debug] [pid 30] mod_so.c(266): AH01575: loaded module access_compat_module from /usr/lib/apache2/modules/mod_access_compat.so
+[Sun May 19 00:41:07.149265 2019] [so:debug] [pid 30] mod_so.c(266): AH01575: loaded module alias_module from /usr/lib/apache2/modules/mod_alias.so
+[Sun May 19 00:41:07.149828 2019] [so:debug] [pid 30] mod_so.c(266): AH01575: loaded module auth_basic_module from /usr/lib/apache2/modules/mod_auth_basic.so
+[Sun May 19 00:41:07.150435 2019] [so:debug] [pid 30] mod_so.c(266): AH01575: loaded module authn_core_module from /usr/lib/apache2/modules/mod_authn_core.so
+[Sun May 19 00:41:07.151163 2019] [so:debug] [pid 30] mod_so.c(266): AH01575: loaded module authn_file_module from /usr/lib/apache2/modules/mod_authn_file.so
+[Sun May 19 00:41:07.151980 2019] [so:debug] [pid 30] mod_so.c(266): AH01575: loaded module authz_core_module from /usr/lib/apache2/modules/mod_authz_core.so
+[Sun May 19 00:41:07.152730 2019] [so:debug] [pid 30] mod_so.c(266): AH01575: loaded module authz_host_module from /usr/lib/apache2/modules/mod_authz_host.so
+[Sun May 19 00:41:07.153314 2019] [so:debug] [pid 30] mod_so.c(266): AH01575: loaded module authz_user_module from /usr/lib/apache2/modules/mod_authz_user.so
+[Sun May 19 00:41:07.153987 2019] [so:debug] [pid 30] mod_so.c(266): AH01575: loaded module autoindex_module from /usr/lib/apache2/modules/mod_autoindex.so
+[Sun May 19 00:41:07.154811 2019] [so:debug] [pid 30] mod_so.c(266): AH01575: loaded module deflate_module from /usr/lib/apache2/modules/mod_deflate.so
+[Sun May 19 00:41:07.155663 2019] [so:debug] [pid 30] mod_so.c(266): AH01575: loaded module dir_module from /usr/lib/apache2/modules/mod_dir.so
+[Sun May 19 00:41:07.159696 2019] [so:debug] [pid 30] mod_so.c(266): AH01575: loaded module env_module from /usr/lib/apache2/modules/mod_env.so
+[Sun May 19 00:41:07.160616 2019] [so:debug] [pid 30] mod_so.c(266): AH01575: loaded module filter_module from /usr/lib/apache2/modules/mod_filter.so
+[Sun May 19 00:41:07.161466 2019] [so:debug] [pid 30] mod_so.c(266): AH01575: loaded module mime_module from /usr/lib/apache2/modules/mod_mime.so
+[Sun May 19 00:41:07.162448 2019] [so:debug] [pid 30] mod_so.c(266): AH01575: loaded module mpm_event_module from /usr/lib/apache2/modules/mod_mpm_event.so
+[Sun May 19 00:41:07.163302 2019] [so:debug] [pid 30:tid 139661044415424] mod_so.c(266): AH01575: loaded module negotiation_module from /usr/lib/apache2/modules/mod_negotiation.so
+[Sun May 19 00:41:07.164099 2019] [so:debug] [pid 30:tid 139661044415424] mod_so.c(266): AH01575: loaded module reqtimeout_module from /usr/lib/apache2/modules/mod_reqtimeout.so
+[Sun May 19 00:41:07.165100 2019] [so:debug] [pid 30:tid 139661044415424] mod_so.c(266): AH01575: loaded module rewrite_module from /usr/lib/apache2/modules/mod_rewrite.so
+[Sun May 19 00:41:07.166492 2019] [so:debug] [pid 30:tid 139661044415424] mod_so.c(266): AH01575: loaded module setenvif_module from /usr/lib/apache2/modules/mod_setenvif.so
+[Sun May 19 00:41:07.167164 2019] [so:debug] [pid 30:tid 139661044415424] mod_so.c(266): AH01575: loaded module status_module from /usr/lib/apache2/modules/mod_status.so
+AH00558: apache2: Could not reliably determine the server's fully qualified domain name, using 172.17.0.2. Set the 'ServerName' directive globally to suppress this message
+[Sun May 19 00:41:07.183156 2019] [mpm_event:notice] [pid 30:tid 139661044415424] AH00489: Apache/2.4.29 (Ubuntu) configured -- resuming normal operations
+[Sun May 19 00:41:07.183649 2019] [core:notice] [pid 30:tid 139661044415424] AH00094: Command line: '/usr/sbin/apache2 -D FOREGROUND -e debug'
