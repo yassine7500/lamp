@@ -17,7 +17,7 @@ ENV APACHE_LOG_LEVEL debug
 RUN add-apt-repository ppa:ondrej/php
 
 #install apache and run ap
-RUN apt-get install apache2 apache2-utils -y
+RUN apt-get install apache2 apache2-utils libapache2-mod-php -y
 
 #install mysql
 RUN apt-get install mariadb-server mariadb-client mariadb-common -y
