@@ -6,12 +6,12 @@ DIR=$(cd `dirname $0` && pwd)
 . "$DIR/config/conf.env"
 
 #Check if yassine7500/lamp is installed
-#if docker images yassine7500/lamp | grep -q 'fauria';then
-#        echo "yassine7500/lamp is already installed";
-#    else
-#        echo 'pulling yassine7500/lamp from repo';
-#        docker pull yassine7500/lamp
-#fi
+if docker images yassine7500/lamp | grep -q 'fauria';then
+        echo "yassine7500/lamp is already installed";
+    else
+        echo 'pulling yassine7500/lamp from repo';
+        docker pull yassine7500/lamp
+fi
 
 
 #check if the base directories exist and create them if not
