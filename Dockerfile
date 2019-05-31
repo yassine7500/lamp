@@ -19,7 +19,10 @@ RUN add-apt-repository ppa:ondrej/php
 #install apache and run ap
 RUN apt-get install apache2 apache2-utils libapache2-mod-php -y
 
-#install mysql
+#install mariadb
+RUN apt-key adv --recv-keys --keyserver hkp://keyserver.ubuntu.com:80 0xF1656F24C74CD1D8
+RUN add-apt-repository 'deb [arch=amd64] http://mirror.zol.co.zw/mariadb/repo/10.3/ubuntu bionic main'
+RUN apt update
 RUN apt-get install mariadb-server mariadb-client mariadb-common -y
 
 #install pghp 7.3
