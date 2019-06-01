@@ -13,6 +13,10 @@ yassine/lamp
 *********************************
 EOB
 
+#set mariadb permission
+
+chown -R mysql:mysql /var/lib/mysql
+
 #start mariadb
 service mysql start &
 
