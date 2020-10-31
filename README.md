@@ -15,7 +15,6 @@ You can add
 `-p _MYSQL_PORT:3306` to access mysql from host
 `-v _MYSQL_VOLUME:/var/lib/mysql` to persist mysql data in host directory or volume
 
-#### clone this repo
 Or you can simply clone this repository and run the `./yassine-lamp.sh` script.
 
 The script will pull the container, create a basic folder structure for the project and run the container with that configuration.
